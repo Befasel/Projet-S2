@@ -12,6 +12,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "pocketbase": "^0.15.0",
+    "save": "^2.9.0",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },
