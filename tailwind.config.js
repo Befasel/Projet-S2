@@ -33,7 +33,9 @@ module.exports = {
        "2xl": "5.394068241119385rem",
        "full": "9999px"
       }
+      
      }
   },
+  
   plugins: []
 }

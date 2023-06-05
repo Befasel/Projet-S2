@@ -5,13 +5,12 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import './assets/css/style.css'
 
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+})
+
 const app = createApp(App)
-
-app.use(
-    createRouter({
-      history: createWebHistory(),
-      routes
-    })
-  )
-
+app.use(router)
 app.mount('#app')
+

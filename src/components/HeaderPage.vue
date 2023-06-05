@@ -6,7 +6,7 @@ const menuIsOpen = ref(false)
 </script>
 
 <template>
-  <header class=" relative bg-[#000] z-20 flex items-center justify-between px-4 gap-8 h-20">
+  <header class=" absolute top-0 left-0 w-full z-20 flex items-center justify-between px-4 gap-8 h-20">
     <a href="/">
       <IconLogo />
     </a>
@@ -22,10 +22,10 @@ const menuIsOpen = ref(false)
       :class="{ '!visible !opacity-100': menuIsOpen }"
     >
       <ul class="flex flex-col items-center gap-10 lg:gap-4 lg:flex-row text-base lg:text-xs">
-        <li><a class="block p-4 text-white" href="">Movies</a></li>
-        <li><a class="block p-4 text-white" href="">Podcast</a></li>
-        <li><a class="block p-4 text-white" href="">Series</a></li>
-        <li><a class="block p-4 text-white" href="">Books</a></li>
+        <li><RouterLink to="movie" class="block p-4 text-white">Movies</RouterLink></li>
+        <li><RouterLink to="serie" class="block p-4 text-white">Series</RouterLink></li>
+        <li><RouterLink to="podcast" class="block p-4 text-white">Podcast</RouterLink></li>
+        <li><RouterLink to="book" class="block p-4 text-white">Book</RouterLink></li>
         <li><a class="block p-4 text-white" href="">Filter</a></li>
       </ul>
       <div class="flex items-center gap-4 px-4">
