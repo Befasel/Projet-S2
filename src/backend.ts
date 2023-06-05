@@ -7,17 +7,6 @@ export async function RandomMovies() {
     return records
 }
 
-export async function getRandomMovie(): Promise<MoviesResponse | null> {
-  try {
-    const movies = await pb.collection('movies').getFullList<MoviesResponse>()
-    const randomIndex = Math.floor(Math.random() * movies.length)
-    return movies[randomIndex] as MoviesResponse
-  } catch (error) {
-    console.error('Erreur lors de la récupération du film aléatoire :', error)
-    return null
-  }
-}
-
 export async function getOneMovies() {
   return await pb.collection('movies').getOne<MoviesResponse>('zpaysz48lnbc1s1')
 }
