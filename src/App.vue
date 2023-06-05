@@ -10,6 +10,8 @@ import { RouterView } from 'vue-router';
 
 <template >
   <HeaderPage />
+  <Suspense>
   <RouterView />
+</Suspense>
   <FooterPage />
 </template>

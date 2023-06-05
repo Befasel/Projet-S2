@@ -26,7 +26,7 @@ const menuIsOpen = ref(false)
         <li><RouterLink to="serie" class="block p-4 text-white">Series</RouterLink></li>
         <li><RouterLink to="podcast" class="block p-4 text-white">Podcast</RouterLink></li>
         <li><RouterLink to="book" class="block p-4 text-white">Book</RouterLink></li>
-        <li><a class="block p-4 text-white" href="">Filter</a></li>
+        <li><RouterLink to="random" class="block p-4 text-white">Filter</RouterLink></li>
       </ul>
       <div class="flex items-center gap-4 px-4">
         <a class="block p-4 text-white" href="">Sign In</a>
