@@ -23,7 +23,7 @@ fetchMovieList();
 
 <template>
     <div class="mt-24">
-        <button @click="displayRandomMovie">Afficher un film aléatoire</button>
+        <button @click="displayRandomMovie">Spin IT</button>
         <Card v-if="showRandomMovie" v-bind="{ ...randomMovie }" />
     </div>
 </template>
